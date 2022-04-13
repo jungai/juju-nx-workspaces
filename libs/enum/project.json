@@ -1,0 +1,32 @@
+{
+  "root": "libs/enum",
+  "sourceRoot": "libs/enum/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/enum",
+        "main": "libs/enum/src/index.ts",
+        "tsConfig": "libs/enum/tsconfig.lib.json",
+        "assets": ["libs/enum/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/enum/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/enum"],
+      "options": {
+        "jestConfig": "libs/enum/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
