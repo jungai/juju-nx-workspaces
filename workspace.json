@@ -1,6 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "service-1": "apps/service-1"
+    "database": "libs/database",
+    "enum": "libs/enum",
+    "service-1": "apps/service-1",
+    "utils-prisma": "libs/utils/prisma"
   }
 }

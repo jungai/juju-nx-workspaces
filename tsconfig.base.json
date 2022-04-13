@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@juju-nx-workspace/database": ["libs/database/src/index.ts"],
+      "@juju-nx-workspace/enum": ["libs/enum/src/index.ts"],
+      "@juju-nx-workspace/utils/prisma": ["libs/utils/prisma/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
